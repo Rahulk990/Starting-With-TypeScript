@@ -44,3 +44,21 @@ console.log(lt1, lt2);
 
 
 
+/*
+    Unknown Type
+*/
+
+
+// Same as any type, but cannot be assigned without type checking
+let unk1: unknown;
+let str: string = "Hello";
+unk1 = 5;
+unk1 = "Name";
+
+
+// str = unk1;      --> Error
+if(typeof unk1 === "string"){
+    str = unk1;
+}
+
+console.log(str, unk1);

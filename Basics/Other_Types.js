@@ -20,6 +20,20 @@ console.log(un1);
 // Literal Types tell about the actual values and not just types
 var lt1 = 'hello';
 var lt2 = 10;
+lt2 = 5;
 // Following code will give error
 // lt1 = 'New Value';
 console.log(lt1, lt2);
+/*
+    Unknown Type
+*/
+// Same as any type, but cannot be assigned without type checking
+var unk1;
+var str = "Hello";
+unk1 = 5;
+unk1 = "Name";
+// str = unk1;      --> Error
+if (typeof unk1 === "string") {
+    str = unk1;
+}
+console.log(str, unk1);
